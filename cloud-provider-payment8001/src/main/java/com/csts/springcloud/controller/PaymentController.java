@@ -41,10 +41,11 @@ public class PaymentController {
     @GetMapping(value = "/payment/get/{id}")
     public CommonResult get(@PathVariable("id") Long id) {
         Payment payment = paymentService.getPaymentById(id);
-        log.info("***********get payment sucess, serverPort: " +serverPort + ", payment: " + payment.toString());
         if (payment != null){
+            log.info("***********get payment sucess, serverPort: " +serverPort + ", payment: " + payment.toString());
             return new CommonResult(200, "get payment sucess, serverPort: " +serverPort, payment);
         } else {
+            log.info("***********get payment Failed, serverPort: " +serverPort + ", payment: null");
             return new CommonResult(444, "no match id: " + id);
         }
     }
