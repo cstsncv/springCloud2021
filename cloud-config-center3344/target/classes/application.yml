@@ -14,7 +14,7 @@ spring:
             - springcloud-config
           force-pull: true
           username: cstsncv
-          password: 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
+          password: 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
       ####读取分支
       label: main
 
