@@ -24,6 +24,6 @@ public class MessageProvider implements IMessageProvider {
 
         output.send(MessageBuilder.withPayload(serial).build());
         log.info("***********serial: "+ serial);
-        return null;
+        return serial;
     }
 }
