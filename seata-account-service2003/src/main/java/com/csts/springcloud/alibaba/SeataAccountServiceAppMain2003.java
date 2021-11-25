@@ -7,8 +7,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @EnableDiscoveryClient
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class) //取消数据源的自动创建
-public class SeataStorageServiceAppMain2002 {
+public class SeataAccountServiceAppMain2003 {
     public static void main(String[] args) {
-        SpringApplication.run(SeataStorageServiceAppMain2002.class, args);
+        SpringApplication.run(SeataAccountServiceAppMain2003.class, args);
     }
 }
