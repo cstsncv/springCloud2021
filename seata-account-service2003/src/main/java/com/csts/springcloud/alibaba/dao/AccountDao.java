@@ -7,6 +7,6 @@ import java.math.BigDecimal;
 
 @Mapper
 public interface AccountDao {
-    // 扣减库存
+    // 扣减账户
     void decrease(@Param("userId") Long userId, @Param("money") BigDecimal money);
 }
